@@ -3,7 +3,7 @@ const express=require('express');
 const app=express();
 app.set('view-engine', 'ejs')
 
-app.get("/", function(req,responce){
+app.get('/', function(req,responce){
     responce.render('home.ejs',{data:'Hello World!'});
   });
 /*app.listen(3000,function(){
